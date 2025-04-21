@@ -1,0 +1,22 @@
+===== SSH no keys =====
+ssh bgorfain@leavitt.bates.edu // log on to the leavitt HPC with my username
+[enter my Bates password]
+mkdir new_project // do whatever I want on it as if I plugged my keyboard into it
+orca my_file.inp > my_file.out
+
+===== SCP =====
+// copy a file from my computer to leavitt 
+scp linderofruticoside_structure.xyz bgorfain@leavitt.bates.edu:linderofruticoside_structure.xyz
+[enter my Bates password]
+// do whatever I need to with that file
+
+===== SSH with keys =====
+ssh-keygen
+[follow the prompts, don't add a password]
+cd ~/.ssh
+cat id_rsa.pub // show your public key
+// add the key to the server you want to ssh into, maybe catapult
+ssh bgorfain@catapult.bates.edu // no password now!
+mkdir new_project // do whatever
+exit // log out
+scp my_site.tar.gz bgorfain@catapult.bates.edu:my_site.tar.gz // no password now!

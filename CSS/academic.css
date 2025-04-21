@@ -1,0 +1,72 @@
+/* root color variable for garnet */
+:root {
+  --garnet: #881124;
+}
+
+#menu-wrapper {
+  display: flex; /* flexbox for menu wrapper */
+  justify-content: space-between; /* space between menu items */
+  background-color: lightgrey; /* light grey background */
+}
+
+#Menu {
+  display: flex;
+  justify-content: flex-start; /* align items to start */
+}
+
+#menu-wrapper span {
+  margin-left: 6.5%; /* left margin for spacing */
+}
+
+#menu-wrapper a {
+  color: black; /* link color black */
+  font-weight: bold; /* bold text */
+  text-decoration: none; /* remove underline */
+  padding: 2px; /* small padding */
+  font-size: 2.5vb; /* font size */
+}
+
+#menu-wrapper a:hover {
+  text-decoration: none; /* no underline on hover */
+  background-color: white; /* white background on hover */
+  border-radius: 5px; /* rounded corners on hover */
+  transition: all 200ms; /* smooth transition */
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column; /* column direction */
+  align-items: center; /* center items horizontally */
+}
+
+.wrapper {
+  width: auto; /* automatic width */
+  margin-top: 20px; /* top margin */
+  margin-inline: auto; /* auto horizontal margin */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.building {
+  border: 2px solid black; /* black border */
+  margin-block: 20px; /* vertical margin */
+  border-radius: 5px; /* rounded corners */
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+}
+
+.building > img {
+  padding: 10; /* padding around image */
+  width: 50vh; /* image width responsive to viewport height */
+  margin-block: 20px; /* vertical margin */
+}
+
+h1 a {
+  color: var(--garnet); /* garnet color for h1 links */
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--garnet); /* garnet color for h1 */
+}

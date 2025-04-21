@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- page title -->
+    <title>Bates Buildings</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="academic.css" />
+  </head>
+  <body>
+    <!-- heading with link to home page -->
+    <h1><a href="home.html">Bates | Buildings</a></h1>
+    <!-- navigation menu wrapper -->
+    <div id="menu-wrapper">
+      <div id="Menu">
+        <!-- navigation links -->
+        <span><a href="home.html">Home</a></span>
+        <span><a href="dorms.html">Dorms</a></span>
+        <span><a href="academic.html">Academic</a></span>
+      </div>
+      <!-- current time display -->
+      <span style="margin-right: 1.5%"><a href="" id="current_time"></a></span>
+    </div>
+    <!-- main content section -->
+    <div class="main_content">
+      <h1 style="text-align: center"><b>Academic</b></h1>
+      <div class="wrapper">
+        <!-- building info: bonney science -->
+        <div class="building">
+          <img
+            src="https://www.payette.com/wp-content/uploads/2022/01/bates_top_image-2-1366x834.jpg"
+            id="bonney"
+          />
+          <p>Bonney Science</p>
+          <p id="bonney_open"></p>
+        </div>
+        <!-- building info: hathorn hall -->
+        <div class="building">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/HathornHall2.jpg/1024px-HathornHall2.jpg"
+            id="hathorn"
+          />
+          <p>Hathorn Hall</p>
+          <p id="hathorn_open"></p>
+        </div>
+        <!-- building info: roger williams -->
+        <div class="building">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5978aeae2994ca3b035c44cf/1555360372014-NP2GNTVSBH68RZNXFY55/Bates-College-Roger-Williams-Hall-1.jpg"
+            id="rogerwilliams"
+          />
+          <p>Roger Williams</p>
+          <p id="rogerwilliams_open"></p>
+        </div>
+        <!-- building info: olin arts -->
+        <div class="building">
+          <img
+            src="https://abacus.bates.edu/muskie-archives/BatesHistory/campusBLDG/Olin.jpg"
+            id="olin"
+          />
+          <p>Olin Arts</p>
+          <p id="olin_open"></p>
+        </div>
+        <!-- building info: hedge hall -->
+        <div class="building">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5978aeae2994ca3b035c44cf/1555360346095-DWSTRUZPJTO2PTD4RJCZ/Hedge+Hall+Bates+College.png"
+            id="hedge"
+          />
+          <p>Hedge Hall</p>
+          <p id="hedge_open"></p>
+        </div>
+      </div>
+      <!-- button to check school start -->
+      <button type="button" id="academic_button" style="width: fit-content">
+        Check When School Starts
+      </button>
+      <!-- result display -->
+      <p id="result"></p>
+    </div>
+    <!-- link to javascript -->
+    <script src="academic.js"></script>
+  </body>
+</html>
